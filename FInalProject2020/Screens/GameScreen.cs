@@ -26,6 +26,7 @@ namespace FInalProject2020
         int player = 1;
 
 
+
         private void circle1_1_Click(object sender, EventArgs e)
         {
             if (circle1_1.BackColor == Color.Black)
@@ -48,50 +49,7 @@ namespace FInalProject2020
 
                 }
 
-                int redToken = 0;
-                int yellowToken = 0;
-
-
-                for (int i = 1; i <= 7; i++)
-                {
-
-                    if (tokens[i] == "red")
-                    {
-                        redToken++;
-                        yellowToken = 0;
-                    }
-                    else if (tokens[i] == "yellow")
-                    {
-                        yellowToken++;
-                        redToken = 0;
-
-                    }
-                    else
-                    {
-                        redToken = 0;
-                        yellowToken = 0;
-
-                    }
-
-
-                    if (redToken == 4)
-                    {
-                        connect4.Text = "Player 1 Wins";
-
-
-                    }
-                    else if (yellowToken == 4)
-                    {
-
-                        connect4.Text = "Player 2 Wins";
-                    }
-
-
-
-
-                }
-
-
+                Win();
             }
 
         }
@@ -116,6 +74,7 @@ namespace FInalProject2020
                     tokens[2] = "Yellow";
 
                 }
+                Win();
             }
 
 
@@ -140,6 +99,7 @@ namespace FInalProject2020
                     tokens[3] = "Yellow";
                 }
 
+                Win();
             }
 
         }
@@ -164,6 +124,8 @@ namespace FInalProject2020
                     player = 1;
                     tokens[4] = "Yellow";
                 }
+
+                Win();
             }
         }
 
@@ -187,6 +149,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[5] = "Red";
                 }
+
             }
         }
 
@@ -209,6 +172,8 @@ namespace FInalProject2020
                     player = 1;
                     tokens[6] = "Yellow";
                 }
+
+
             }
         }
 
@@ -232,6 +197,7 @@ namespace FInalProject2020
                     tokens[7] = "Yellow";
 
                 }
+
             }
         }
 
@@ -255,6 +221,7 @@ namespace FInalProject2020
                     tokens[8] = "Yellow";
 
                 }
+
             }
         }
 
@@ -277,6 +244,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[9] = "Yellow";
                 }
+
             }
         }
 
@@ -299,6 +267,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[10] = "Yellow";
                 }
+  
             }
         }
 
@@ -321,6 +290,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[11] = "Yellow";
                 }
+              
             }
         }
 
@@ -343,6 +313,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[12] = "Yellow";
                 }
+             
             }
         }
 
@@ -365,6 +336,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[13] = "Yellow";
                 }
+      
             }
         }
 
@@ -387,6 +359,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[14] = "Yellow";
                 }
+     
             }
         }
 
@@ -409,6 +382,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[15] = "Yellow";
                 }
+
             }
         }
 
@@ -432,6 +406,7 @@ namespace FInalProject2020
                     tokens[16] = "Yellow";
 
                 }
+
             }
         }
 
@@ -455,6 +430,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[17] = "Yellow";
                     }
+
                 }
             }
         }
@@ -1080,6 +1056,8 @@ namespace FInalProject2020
             playerLabel.ForeColor = Color.Black;
             connect4.ForeColor = Color.MediumBlue;
             startButton.Visible = false;
+
+            circle1_1.Enabled = true;
         }
 
 
@@ -1152,7 +1130,6 @@ namespace FInalProject2020
             tokens[40] = "black";
             tokens[41] = "black";
             tokens[42] = "black";
-            tokens[43] = "black";
         }
 
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -1374,7 +1351,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 22; i <= 29; i++)
+            for (int i = 22; i <= 28; i++)
             {
 
                 if (tokens[i] == "red")
@@ -1408,6 +1385,755 @@ namespace FInalProject2020
                 }
 
             }
+
+            for (int i = 29; i <= 35; i++)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 36; i <= 42; i++)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 1; i <= 36; i= i + 7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 2; i <= 37; i = i + 7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 3; i <= 38; i= i + 7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 4; i <= 39; i= i +7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 5; i <= 40; i= i + 7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 6; i <= 41; i= i + 7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 7; i <= 42; i= i +7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 4; i <= 22; i= i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 5; i <= 23; i+= i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 11; i <= 29; i= i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    break;
+                }
+
+            }
+
+            for (int i = 6; i <= 24; i= i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 12; i <= 30; i= i + 7)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 18; i <= 36; i= i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 7; i <= 25; i= i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 13; i <= 31; i = i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 19; i <= 37; i = i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 14; i <= 32; i = i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 20; i <= 38; i = i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                }
+
+            }
+
+            for (int i = 21; i <= 39; i = i + 6)
+            {
+
+                if (tokens[i] == "red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }

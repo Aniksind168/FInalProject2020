@@ -89,6 +89,7 @@
             // circle1_1
             // 
             this.circle1_1.BackColor = System.Drawing.Color.Black;
+            this.circle1_1.Enabled = false;
             this.circle1_1.Location = new System.Drawing.Point(38, 26);
             this.circle1_1.Name = "circle1_1";
             this.circle1_1.Size = new System.Drawing.Size(67, 60);
