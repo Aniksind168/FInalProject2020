@@ -22,12 +22,14 @@ namespace FInalProject2020
         //player2 button control keys - DO NOT CHANGE
         Boolean aDown, sDown, dDown, wDown, cDown, vDown, xDown, zDown;
 
+        //Declaring player turn and array for win method
         string[] tokens = new string[43];
-
         int player = 1;
 
+        //Click Sound
+        SoundPlayer clickSound = new SoundPlayer(Properties.Resources.clickSound);
 
-
+        //Changing color of token when clicked and tracking player turn when token is clicked
         private void circle1_1_Click(object sender, EventArgs e)
         {
             if (circle1_1.BackColor == Color.Black)
@@ -39,6 +41,7 @@ namespace FInalProject2020
                     circle1_1.BackColor = Color.Red;
                     player = 2;
                     tokens[1] = "Red";
+                    clickSound.Play();
 
                 }
 
@@ -48,9 +51,9 @@ namespace FInalProject2020
                     circle1_1.BackColor = Color.Yellow;
                     player = 1;
                     tokens[1] = "Yellow";
+                    clickSound.Play();
 
                 }
-
                 Win();
             }
 
@@ -66,6 +69,7 @@ namespace FInalProject2020
                     circle1_2.BackColor = Color.Red;
                     player = 2;
                     tokens[2] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -74,6 +78,7 @@ namespace FInalProject2020
                     circle1_2.BackColor = Color.Yellow;
                     player = 1;
                     tokens[2] = "Yellow";
+                    clickSound.Play();
 
                 }
                 Win();
@@ -91,6 +96,7 @@ namespace FInalProject2020
                     circle1_3.BackColor = Color.Red;
                     player = 2;
                     tokens[3] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -99,6 +105,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[3] = "Yellow";
+                    clickSound.Play();
                 }
 
                 Win();
@@ -117,6 +124,7 @@ namespace FInalProject2020
                     circle1_4.BackColor = Color.Red;
                     player = 2;
                     tokens[4] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -125,6 +133,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[4] = "Yellow";
+                    clickSound.Play();
                 }
 
                 Win();
@@ -142,6 +151,7 @@ namespace FInalProject2020
                     circle1_5.BackColor = Color.Red;
                     player = 2;
                     tokens[5] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -150,6 +160,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[5] = "Red";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -165,6 +176,7 @@ namespace FInalProject2020
                     circle1_6.BackColor = Color.Red;
                     player = 2;
                     tokens[6] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -173,6 +185,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[6] = "Yellow";
+                    clickSound.Play();
                 }
 
                 Win();
@@ -189,6 +202,7 @@ namespace FInalProject2020
                     circle1_7.BackColor = Color.Red;
                     player = 2;
                     tokens[7] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -197,6 +211,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[7] = "Yellow";
+                    clickSound.Play();
 
                 }
                 Win();
@@ -213,6 +228,7 @@ namespace FInalProject2020
                     circle2_1.BackColor = Color.Red;
                     player = 2;
                     tokens[8] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -221,6 +237,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[8] = "Yellow";
+                    clickSound.Play();
 
                 }
                 Win();
@@ -237,6 +254,7 @@ namespace FInalProject2020
                     circle2_2.BackColor = Color.Red;
                     player = 2;
                     tokens[9] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -245,6 +263,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[9] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -260,6 +279,7 @@ namespace FInalProject2020
                     circle2_3.BackColor = Color.Red;
                     player = 2;
                     tokens[10] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -268,6 +288,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[10] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -283,6 +304,7 @@ namespace FInalProject2020
                     circle2_4.BackColor = Color.Red;
                     player = 2;
                     tokens[11] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -291,6 +313,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[11] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -306,6 +329,7 @@ namespace FInalProject2020
                     circle2_5.BackColor = Color.Red;
                     player = 2;
                     tokens[12] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -314,6 +338,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[12] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -329,6 +354,7 @@ namespace FInalProject2020
                     circle2_6.BackColor = Color.Red;
                     player = 2;
                     tokens[13] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -337,6 +363,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[13] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -352,6 +379,7 @@ namespace FInalProject2020
                     circle2_7.BackColor = Color.Red;
                     player = 2;
                     tokens[14] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -360,6 +388,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[14] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -375,6 +404,7 @@ namespace FInalProject2020
                     circle3_1.BackColor = Color.Red;
                     player = 2;
                     tokens[15] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -383,6 +413,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[15] = "Yellow";
+                    clickSound.Play();
                 }
                 Win();
             }
@@ -398,6 +429,7 @@ namespace FInalProject2020
                     circle3_2.BackColor = Color.Red;
                     player = 2;
                     tokens[16] = "Red";
+                    clickSound.Play();
                 }
 
                 else if (player == 2)
@@ -406,6 +438,7 @@ namespace FInalProject2020
                     playerLabel.Text = "Player 2";
                     player = 1;
                     tokens[16] = "Yellow";
+                    clickSound.Play();
 
                 }
                 Win();
@@ -423,6 +456,7 @@ namespace FInalProject2020
                         circle3_3.BackColor = Color.Red;
                         player = 2;
                         tokens[17] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -431,6 +465,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[17] = "Yellow";
+                        clickSound.Play();
                     }
 
                     Win();
@@ -449,6 +484,7 @@ namespace FInalProject2020
                         circle3_4.BackColor = Color.Red;
                         player = 2;
                         tokens[18] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -457,6 +493,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[18] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -474,6 +511,7 @@ namespace FInalProject2020
                         circle3_5.BackColor = Color.Red;
                         player = 2;
                         tokens[19] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -482,6 +520,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[19] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -499,6 +538,7 @@ namespace FInalProject2020
                         circle3_6.BackColor = Color.Red;
                         player = 2;
                         tokens[20] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -507,6 +547,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[20] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -524,6 +565,7 @@ namespace FInalProject2020
                         circle3_7.BackColor = Color.Red;
                         player = 2;
                         tokens[21] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -532,6 +574,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[21] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -549,6 +592,7 @@ namespace FInalProject2020
                         circle4_1.BackColor = Color.Red;
                         player = 2;
                         tokens[22] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -557,6 +601,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[22] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -574,6 +619,7 @@ namespace FInalProject2020
                         circle4_2.BackColor = Color.Red;
                         player = 2;
                         tokens[23] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -582,6 +628,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[23] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -599,6 +646,7 @@ namespace FInalProject2020
                         circle4_3.BackColor = Color.Red;
                         player = 2;
                         tokens[24] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -607,6 +655,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[24] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -624,6 +673,7 @@ namespace FInalProject2020
                         circle4_4.BackColor = Color.Red;
                         player = 2;
                         tokens[25] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -632,6 +682,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[25] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -649,6 +700,7 @@ namespace FInalProject2020
                         circle4_5.BackColor = Color.Red;
                         player = 2;
                         tokens[26] = "Red";
+                        clickSound.Play();
 
                     }
 
@@ -658,8 +710,10 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[26] = "Yellow";
+                        clickSound.Play();
 
                     }
+
                     Win();
                 }
             }
@@ -676,6 +730,7 @@ namespace FInalProject2020
                         circle4_6.BackColor = Color.Red;
                         player = 2;
                         tokens[27] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -684,6 +739,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[27] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -701,6 +757,7 @@ namespace FInalProject2020
                         circle4_7.BackColor = Color.Red;
                         player = 2;
                         tokens[28] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -709,6 +766,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[28] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -726,6 +784,7 @@ namespace FInalProject2020
                         circle5_1.BackColor = Color.Red;
                         player = 2;
                         tokens[29] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -734,6 +793,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[29] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -751,6 +811,7 @@ namespace FInalProject2020
                         circle5_2.BackColor = Color.Red;
                         player = 2;
                         tokens[30] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -759,6 +820,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[30] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -776,6 +838,7 @@ namespace FInalProject2020
                         circle5_3.BackColor = Color.Red;
                         player = 2;
                         tokens[31] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -784,6 +847,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[31] = "Yellow";
+                        clickSound.Play();
 
                     }
                     Win();
@@ -802,6 +866,7 @@ namespace FInalProject2020
                         circle5_4.BackColor = Color.Red;
                         player = 2;
                         tokens[32] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -810,6 +875,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[32] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -828,6 +894,7 @@ namespace FInalProject2020
                         circle5_5.BackColor = Color.Red;
                         player = 2;
                         tokens[33] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -836,6 +903,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[33] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -853,6 +921,7 @@ namespace FInalProject2020
                         circle5_6.BackColor = Color.Red;
                         player = 2;
                         tokens[34] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -861,6 +930,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[34] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -878,6 +948,7 @@ namespace FInalProject2020
                         circle5_7.BackColor = Color.Red;
                         player = 2;
                         tokens[35] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -886,6 +957,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[35] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -903,6 +975,7 @@ namespace FInalProject2020
                         circle6_1.BackColor = Color.Red;
                         player = 2;
                         tokens[36] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -911,6 +984,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[36] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -928,6 +1002,7 @@ namespace FInalProject2020
                         circle6_2.BackColor = Color.Red;
                         player = 2;
                         tokens[37] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -936,6 +1011,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[37] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -953,6 +1029,7 @@ namespace FInalProject2020
                         circle6_3.BackColor = Color.Red;
                         player = 2;
                         tokens[38] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -961,6 +1038,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[38] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -978,6 +1056,7 @@ namespace FInalProject2020
                         circle6_4.BackColor = Color.Red;
                         player = 2;
                         tokens[39] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -986,6 +1065,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[39] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -1003,6 +1083,7 @@ namespace FInalProject2020
                         circle6_5.BackColor = Color.Red;
                         player = 2;
                         tokens[40] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -1011,6 +1092,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[40] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -1028,6 +1110,7 @@ namespace FInalProject2020
                         circle6_6.BackColor = Color.Red;
                         player = 2;
                         tokens[41] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -1036,6 +1119,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[41] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -1053,6 +1137,7 @@ namespace FInalProject2020
                         circle6_7.BackColor = Color.Red;
                         player = 2;
                         tokens[42] = "Red";
+                        clickSound.Play();
                     }
 
                     else if (player == 2)
@@ -1061,6 +1146,7 @@ namespace FInalProject2020
                         playerLabel.Text = "Player 2";
                         player = 1;
                         tokens[42] = "Yellow";
+                        clickSound.Play();
                     }
                     Win();
                 }
@@ -1068,7 +1154,7 @@ namespace FInalProject2020
         }
 
 
-
+        //Restart Button
         private void restartButton_Click(object sender, EventArgs e)
         {
             circle1_1.BackColor = Color.Black;
@@ -1114,9 +1200,62 @@ namespace FInalProject2020
             circle6_6.BackColor = Color.Black;
             circle6_7.BackColor = Color.Black;
 
+            player = 1;
+            playerLabel.Text = "Player 1";
+            connect4.Text = "";
+            connect4.ForeColor = Color.MediumBlue;
+
+
+            tokens[0] = "extra";
+            tokens[1] = "black";
+            tokens[2] = "black";
+            tokens[3] = "black";
+            tokens[4] = "black";
+            tokens[5] = "black";
+            tokens[6] = "black";
+            tokens[7] = "black";
+            tokens[8] = "black";
+            tokens[9] = "black";
+            tokens[10] = "black";
+            tokens[11] = "black";
+            tokens[12] = "black";
+            tokens[13] = "black";
+            tokens[14] = "black";
+            tokens[15] = "black";
+            tokens[16] = "black";
+            tokens[17] = "black";
+            tokens[18] = "black";
+            tokens[19] = "black";
+            tokens[20] = "black";
+            tokens[21] = "black";
+            tokens[22] = "black";
+            tokens[23] = "black";
+            tokens[24] = "black";
+            tokens[25] = "black";
+            tokens[26] = "black";
+            tokens[27] = "black";
+            tokens[28] = "black";
+            tokens[29] = "black";
+            tokens[30] = "black";
+            tokens[31] = "black";
+            tokens[32] = "black";
+            tokens[33] = "black";
+            tokens[34] = "black";
+            tokens[35] = "black";
+            tokens[36] = "black";
+            tokens[37] = "black";
+            tokens[38] = "black";
+            tokens[39] = "black";
+            tokens[40] = "black";
+            tokens[41] = "black";
+            tokens[42] = "black";
+
+
+
 
         }
 
+        //Start Button
         private void startButton_Click(object sender, EventArgs e)
         {
             playerLabel.BackColor = Color.White;
@@ -1167,10 +1306,10 @@ namespace FInalProject2020
             circle6_6.Enabled = true;
             circle6_7.Enabled = true;
 
-
+ 
         }
 
-
+        //Quit Button
         private void quitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -1191,8 +1330,7 @@ namespace FInalProject2020
 
         public void InitializeGameValues()
         {
-            //TODO - setup all your initial game values here. Use this method
-            // each time you restart your game to reset all values.
+           //initial values
             heroX = 100;
             heroY = 100;
             heroSize = 20;
@@ -1350,9 +1488,10 @@ namespace FInalProject2020
             //e.Graphics.FillRectangle(heroBrush, heroX, heroY, heroSize, heroSize);
         }
 
+        //win method, this method tracks of there is a win in the game and will display messages and preforms actions.
         public void Win()
         {
-            int redToken = 0; 
+            int redToken = 0;
             int yellowToken = 0;
 
 
@@ -1513,7 +1652,7 @@ namespace FInalProject2020
             for (int i = 29; i <= 35; i++)
             {
 
-                if (tokens[i] == "Yed")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
@@ -1588,7 +1727,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 1; i <= 36; i= i + 7)
+            for (int i = 1; i <= 36; i = i + 7)
             {
 
                 if (tokens[i] == "Red")
@@ -1666,7 +1805,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 3; i <= 38; i= i + 7)
+            for (int i = 3; i <= 38; i = i + 7)
             {
 
                 if (tokens[i] == "Red")
@@ -1705,7 +1844,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 4; i <= 39; i= i +7)
+            for (int i = 4; i <= 39; i = i + 7)
             {
 
                 if (tokens[i] == "Red")
@@ -1745,7 +1884,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 5; i <= 40; i= i + 7)
+            for (int i = 5; i <= 40; i = i + 7)
             {
 
                 if (tokens[i] == "Red")
@@ -1784,7 +1923,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 6; i <= 41; i= i + 7)
+            for (int i = 6; i <= 41; i = i + 7)
             {
 
                 if (tokens[i] == "Red")
@@ -1823,7 +1962,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 7; i <= 42; i= i +7)
+            for (int i = 7; i <= 42; i = i + 7)
             {
 
                 if (tokens[i] == "Red")
@@ -1861,160 +2000,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 4; i <= 22; i= i + 6)
-            {
-
-                if (tokens[i] == "Red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "Yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-                }
-
-            }
-
-            for (int i = 5; i <= 29; i+= i + 6)
-            {
-
-                if (tokens[i] == "Red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "Yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-                }
-
-            }
-
-            for (int i = 6; i <= 36; i= i + 6)
-            {
-
-                if (tokens[i] == "Red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "Yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-                }
-
-            }
-
-            for (int i = 7; i <= 37; i= i + 6)
-            {
-
-                if (tokens[i] == "Red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "Yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                    connect4.ForeColor = Color.Black;
-                    break;
-                }
-
-            }
-
-            for (int i = 14; i <= 38; i= i + 7)
+            for (int i = 4; i <= 22; i = i + 6)
             {
 
                 if (tokens[i] == "Red")
@@ -2053,7 +2039,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 21; i <= 39; i= i + 6)
+            for (int i = 5; i <= 29; i = i + 6)
             {
 
                 if (tokens[i] == "Red")
@@ -2091,9 +2077,392 @@ namespace FInalProject2020
 
             }
 
+            for (int i = 6; i <= 36; i = i + 6)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+            }
+
+            for (int i = 7; i <= 37; i = i + 6)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+            }
+
+            for (int i = 14; i <= 38; i = i + 6)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
 
 
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+            }
+
+            for (int i = 21; i <= 39; i = i + 6)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+            }
+
+            for (int i = 15; i <= 39; i = i + 8)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+
+            }
+
+            for (int i = 8; i <= 40; i = i + 8)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+
+
+            }
+
+            for (int i = 1; i <= 41; i = i + 8)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+
+            }
+
+            for (int i = 2; i <= 42; i = i + 8)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+            }
+
+            for (int i = 3; i <= 35; i = i + 8)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+            }
+
+            for (int i = 4; i <= 28; i = i + 8)
+            {
+
+                if (tokens[i] == "Red")
+                {
+                    redToken++;
+                    yellowToken = 0;
+                }
+                else if (tokens[i] == "Yellow")
+                {
+                    yellowToken++;
+                    redToken = 0;
+
+                }
+                else
+                {
+                    redToken = 0;
+                    yellowToken = 0;
+
+                }
+
+                if (redToken == 4)
+                {
+                    connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+
+                }
+                else if (yellowToken == 4)
+                {
+
+                    connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
+                    break;
+                }
+
+
+
+            }
         }
     }
-
 }
