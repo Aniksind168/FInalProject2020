@@ -571,9 +571,9 @@
             // connect4
             // 
             this.connect4.Font = new System.Drawing.Font("Palatino Linotype", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.connect4.Location = new System.Drawing.Point(771, 186);
+            this.connect4.Location = new System.Drawing.Point(763, 186);
             this.connect4.Name = "connect4";
-            this.connect4.Size = new System.Drawing.Size(229, 60);
+            this.connect4.Size = new System.Drawing.Size(237, 130);
             this.connect4.TabIndex = 47;
             this.connect4.Text = "Connect Four";
             // 

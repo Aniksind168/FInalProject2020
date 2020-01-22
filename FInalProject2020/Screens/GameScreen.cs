@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using GameSystemServices;
 using System.Threading;
 using System.Media;
+using System;
 
 namespace FInalProject2020
 {
@@ -31,6 +32,8 @@ namespace FInalProject2020
         {
             if (circle1_1.BackColor == Color.Black)
             {
+                Console.Write("Anika");
+
                 if (player == 1)
                 {
                     playerLabel.Text = "Player 1";
@@ -1285,7 +1288,7 @@ namespace FInalProject2020
 
         public void Win()
         {
-            int redToken = 0;
+            int redToken = 0; 
             int yellowToken = 0;
 
 
@@ -1295,6 +1298,7 @@ namespace FInalProject2020
                 if (tokens[i] == "red")
                 {
                     redToken++;
+                    connect4.Text = redToken.ToString("C");
                     yellowToken = 0;
                 }
                 else if (tokens[i] == "yellow")
@@ -1312,7 +1316,9 @@ namespace FInalProject2020
 
                 if (redToken == 4)
                 {
+
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1320,6 +1326,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1680,6 +1687,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1688,6 +1696,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1717,6 +1726,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1725,6 +1735,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1754,6 +1765,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1761,6 +1773,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1790,6 +1803,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1798,6 +1812,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1827,6 +1842,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1834,6 +1850,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1863,6 +1880,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1870,6 +1888,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1899,6 +1918,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1906,6 +1926,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1935,6 +1956,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1943,6 +1965,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1972,6 +1995,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1979,6 +2003,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
