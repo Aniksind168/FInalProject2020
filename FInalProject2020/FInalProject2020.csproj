@@ -152,5 +152,8 @@
   <ItemGroup>
     <None Include="Resources\Click2-Sebastian-759472264.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
