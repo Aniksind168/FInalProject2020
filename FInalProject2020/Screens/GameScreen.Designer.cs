@@ -99,6 +99,7 @@
             // circle2_1
             // 
             this.circle2_1.BackColor = System.Drawing.Color.Black;
+            this.circle2_1.Enabled = false;
             this.circle2_1.Location = new System.Drawing.Point(37, 107);
             this.circle2_1.Name = "circle2_1";
             this.circle2_1.Size = new System.Drawing.Size(67, 60);
@@ -108,6 +109,7 @@
             // circle3_1
             // 
             this.circle3_1.BackColor = System.Drawing.Color.Black;
+            this.circle3_1.Enabled = false;
             this.circle3_1.Location = new System.Drawing.Point(37, 186);
             this.circle3_1.Name = "circle3_1";
             this.circle3_1.Size = new System.Drawing.Size(67, 60);
@@ -117,6 +119,7 @@
             // circle4_1
             // 
             this.circle4_1.BackColor = System.Drawing.Color.Black;
+            this.circle4_1.Enabled = false;
             this.circle4_1.Location = new System.Drawing.Point(37, 265);
             this.circle4_1.Name = "circle4_1";
             this.circle4_1.Size = new System.Drawing.Size(67, 60);
@@ -126,6 +129,7 @@
             // circle5_1
             // 
             this.circle5_1.BackColor = System.Drawing.Color.Black;
+            this.circle5_1.Enabled = false;
             this.circle5_1.Location = new System.Drawing.Point(37, 344);
             this.circle5_1.Name = "circle5_1";
             this.circle5_1.Size = new System.Drawing.Size(67, 60);
@@ -135,6 +139,7 @@
             // circle6_1
             // 
             this.circle6_1.BackColor = System.Drawing.Color.Black;
+            this.circle6_1.Enabled = false;
             this.circle6_1.Location = new System.Drawing.Point(37, 425);
             this.circle6_1.Name = "circle6_1";
             this.circle6_1.Size = new System.Drawing.Size(67, 60);
@@ -144,6 +149,7 @@
             // circle6_2
             // 
             this.circle6_2.BackColor = System.Drawing.Color.Black;
+            this.circle6_2.Enabled = false;
             this.circle6_2.Location = new System.Drawing.Point(136, 425);
             this.circle6_2.Name = "circle6_2";
             this.circle6_2.Size = new System.Drawing.Size(67, 60);
@@ -153,6 +159,7 @@
             // circle5_2
             // 
             this.circle5_2.BackColor = System.Drawing.Color.Black;
+            this.circle5_2.Enabled = false;
             this.circle5_2.Location = new System.Drawing.Point(136, 344);
             this.circle5_2.Name = "circle5_2";
             this.circle5_2.Size = new System.Drawing.Size(67, 60);
@@ -162,6 +169,7 @@
             // circle4_2
             // 
             this.circle4_2.BackColor = System.Drawing.Color.Black;
+            this.circle4_2.Enabled = false;
             this.circle4_2.Location = new System.Drawing.Point(136, 265);
             this.circle4_2.Name = "circle4_2";
             this.circle4_2.Size = new System.Drawing.Size(67, 60);
@@ -171,6 +179,7 @@
             // circle3_2
             // 
             this.circle3_2.BackColor = System.Drawing.Color.Black;
+            this.circle3_2.Enabled = false;
             this.circle3_2.Location = new System.Drawing.Point(136, 186);
             this.circle3_2.Name = "circle3_2";
             this.circle3_2.Size = new System.Drawing.Size(67, 60);
@@ -180,6 +189,7 @@
             // circle2_2
             // 
             this.circle2_2.BackColor = System.Drawing.Color.Black;
+            this.circle2_2.Enabled = false;
             this.circle2_2.Location = new System.Drawing.Point(136, 107);
             this.circle2_2.Name = "circle2_2";
             this.circle2_2.Size = new System.Drawing.Size(67, 60);
@@ -189,6 +199,7 @@
             // circle1_2
             // 
             this.circle1_2.BackColor = System.Drawing.Color.Black;
+            this.circle1_2.Enabled = false;
             this.circle1_2.Location = new System.Drawing.Point(136, 26);
             this.circle1_2.Name = "circle1_2";
             this.circle1_2.Size = new System.Drawing.Size(67, 60);
@@ -198,6 +209,7 @@
             // circle6_3
             // 
             this.circle6_3.BackColor = System.Drawing.Color.Black;
+            this.circle6_3.Enabled = false;
             this.circle6_3.Location = new System.Drawing.Point(228, 425);
             this.circle6_3.Name = "circle6_3";
             this.circle6_3.Size = new System.Drawing.Size(67, 60);
@@ -207,6 +219,7 @@
             // circle5_3
             // 
             this.circle5_3.BackColor = System.Drawing.Color.Black;
+            this.circle5_3.Enabled = false;
             this.circle5_3.Location = new System.Drawing.Point(228, 344);
             this.circle5_3.Name = "circle5_3";
             this.circle5_3.Size = new System.Drawing.Size(67, 60);
@@ -216,6 +229,7 @@
             // circle4_3
             // 
             this.circle4_3.BackColor = System.Drawing.Color.Black;
+            this.circle4_3.Enabled = false;
             this.circle4_3.Location = new System.Drawing.Point(228, 265);
             this.circle4_3.Name = "circle4_3";
             this.circle4_3.Size = new System.Drawing.Size(67, 60);
@@ -225,6 +239,7 @@
             // circle3_3
             // 
             this.circle3_3.BackColor = System.Drawing.Color.Black;
+            this.circle3_3.Enabled = false;
             this.circle3_3.Location = new System.Drawing.Point(228, 186);
             this.circle3_3.Name = "circle3_3";
             this.circle3_3.Size = new System.Drawing.Size(67, 60);
@@ -234,6 +249,7 @@
             // circle2_3
             // 
             this.circle2_3.BackColor = System.Drawing.Color.Black;
+            this.circle2_3.Enabled = false;
             this.circle2_3.Location = new System.Drawing.Point(228, 107);
             this.circle2_3.Name = "circle2_3";
             this.circle2_3.Size = new System.Drawing.Size(67, 60);
@@ -243,6 +259,7 @@
             // circle1_3
             // 
             this.circle1_3.BackColor = System.Drawing.Color.Black;
+            this.circle1_3.Enabled = false;
             this.circle1_3.Location = new System.Drawing.Point(228, 26);
             this.circle1_3.Name = "circle1_3";
             this.circle1_3.Size = new System.Drawing.Size(67, 60);
@@ -252,6 +269,7 @@
             // circle6_4
             // 
             this.circle6_4.BackColor = System.Drawing.Color.Black;
+            this.circle6_4.Enabled = false;
             this.circle6_4.Location = new System.Drawing.Point(322, 425);
             this.circle6_4.Name = "circle6_4";
             this.circle6_4.Size = new System.Drawing.Size(67, 60);
@@ -261,6 +279,7 @@
             // circle5_4
             // 
             this.circle5_4.BackColor = System.Drawing.Color.Black;
+            this.circle5_4.Enabled = false;
             this.circle5_4.Location = new System.Drawing.Point(322, 344);
             this.circle5_4.Name = "circle5_4";
             this.circle5_4.Size = new System.Drawing.Size(67, 60);
@@ -270,6 +289,7 @@
             // circle4_4
             // 
             this.circle4_4.BackColor = System.Drawing.Color.Black;
+            this.circle4_4.Enabled = false;
             this.circle4_4.Location = new System.Drawing.Point(322, 265);
             this.circle4_4.Name = "circle4_4";
             this.circle4_4.Size = new System.Drawing.Size(67, 60);
@@ -279,6 +299,7 @@
             // circle3_4
             // 
             this.circle3_4.BackColor = System.Drawing.Color.Black;
+            this.circle3_4.Enabled = false;
             this.circle3_4.Location = new System.Drawing.Point(322, 186);
             this.circle3_4.Name = "circle3_4";
             this.circle3_4.Size = new System.Drawing.Size(67, 60);
@@ -288,6 +309,7 @@
             // circle2_4
             // 
             this.circle2_4.BackColor = System.Drawing.Color.Black;
+            this.circle2_4.Enabled = false;
             this.circle2_4.Location = new System.Drawing.Point(322, 107);
             this.circle2_4.Name = "circle2_4";
             this.circle2_4.Size = new System.Drawing.Size(67, 60);
@@ -297,6 +319,7 @@
             // circle1_4
             // 
             this.circle1_4.BackColor = System.Drawing.Color.Black;
+            this.circle1_4.Enabled = false;
             this.circle1_4.Location = new System.Drawing.Point(322, 26);
             this.circle1_4.Name = "circle1_4";
             this.circle1_4.Size = new System.Drawing.Size(67, 60);
@@ -306,6 +329,7 @@
             // circle6_5
             // 
             this.circle6_5.BackColor = System.Drawing.Color.Black;
+            this.circle6_5.Enabled = false;
             this.circle6_5.Location = new System.Drawing.Point(413, 425);
             this.circle6_5.Name = "circle6_5";
             this.circle6_5.Size = new System.Drawing.Size(67, 60);
@@ -315,6 +339,7 @@
             // circle5_5
             // 
             this.circle5_5.BackColor = System.Drawing.Color.Black;
+            this.circle5_5.Enabled = false;
             this.circle5_5.Location = new System.Drawing.Point(413, 344);
             this.circle5_5.Name = "circle5_5";
             this.circle5_5.Size = new System.Drawing.Size(67, 60);
@@ -324,6 +349,7 @@
             // circle4_5
             // 
             this.circle4_5.BackColor = System.Drawing.Color.Black;
+            this.circle4_5.Enabled = false;
             this.circle4_5.Location = new System.Drawing.Point(413, 265);
             this.circle4_5.Name = "circle4_5";
             this.circle4_5.Size = new System.Drawing.Size(67, 60);
@@ -333,6 +359,7 @@
             // circle3_5
             // 
             this.circle3_5.BackColor = System.Drawing.Color.Black;
+            this.circle3_5.Enabled = false;
             this.circle3_5.Location = new System.Drawing.Point(413, 186);
             this.circle3_5.Name = "circle3_5";
             this.circle3_5.Size = new System.Drawing.Size(67, 60);
@@ -342,6 +369,7 @@
             // circle2_5
             // 
             this.circle2_5.BackColor = System.Drawing.Color.Black;
+            this.circle2_5.Enabled = false;
             this.circle2_5.Location = new System.Drawing.Point(413, 107);
             this.circle2_5.Name = "circle2_5";
             this.circle2_5.Size = new System.Drawing.Size(67, 60);
@@ -351,6 +379,7 @@
             // circle1_5
             // 
             this.circle1_5.BackColor = System.Drawing.Color.Black;
+            this.circle1_5.Enabled = false;
             this.circle1_5.Location = new System.Drawing.Point(413, 26);
             this.circle1_5.Name = "circle1_5";
             this.circle1_5.Size = new System.Drawing.Size(67, 60);
@@ -360,6 +389,7 @@
             // circle6_6
             // 
             this.circle6_6.BackColor = System.Drawing.Color.Black;
+            this.circle6_6.Enabled = false;
             this.circle6_6.Location = new System.Drawing.Point(505, 425);
             this.circle6_6.Name = "circle6_6";
             this.circle6_6.Size = new System.Drawing.Size(67, 60);
@@ -369,6 +399,7 @@
             // circle5_6
             // 
             this.circle5_6.BackColor = System.Drawing.Color.Black;
+            this.circle5_6.Enabled = false;
             this.circle5_6.Location = new System.Drawing.Point(505, 344);
             this.circle5_6.Name = "circle5_6";
             this.circle5_6.Size = new System.Drawing.Size(67, 60);
@@ -378,6 +409,7 @@
             // circle4_6
             // 
             this.circle4_6.BackColor = System.Drawing.Color.Black;
+            this.circle4_6.Enabled = false;
             this.circle4_6.Location = new System.Drawing.Point(505, 265);
             this.circle4_6.Name = "circle4_6";
             this.circle4_6.Size = new System.Drawing.Size(67, 60);
@@ -387,6 +419,7 @@
             // circle3_6
             // 
             this.circle3_6.BackColor = System.Drawing.Color.Black;
+            this.circle3_6.Enabled = false;
             this.circle3_6.Location = new System.Drawing.Point(505, 186);
             this.circle3_6.Name = "circle3_6";
             this.circle3_6.Size = new System.Drawing.Size(67, 60);
@@ -396,6 +429,7 @@
             // circle2_6
             // 
             this.circle2_6.BackColor = System.Drawing.Color.Black;
+            this.circle2_6.Enabled = false;
             this.circle2_6.Location = new System.Drawing.Point(505, 107);
             this.circle2_6.Name = "circle2_6";
             this.circle2_6.Size = new System.Drawing.Size(67, 60);
@@ -405,6 +439,7 @@
             // circle1_6
             // 
             this.circle1_6.BackColor = System.Drawing.Color.Black;
+            this.circle1_6.Enabled = false;
             this.circle1_6.Location = new System.Drawing.Point(505, 26);
             this.circle1_6.Name = "circle1_6";
             this.circle1_6.Size = new System.Drawing.Size(67, 60);
@@ -414,6 +449,7 @@
             // circle6_7
             // 
             this.circle6_7.BackColor = System.Drawing.Color.Black;
+            this.circle6_7.Enabled = false;
             this.circle6_7.Location = new System.Drawing.Point(597, 425);
             this.circle6_7.Name = "circle6_7";
             this.circle6_7.Size = new System.Drawing.Size(67, 60);
@@ -423,6 +459,7 @@
             // circle5_7
             // 
             this.circle5_7.BackColor = System.Drawing.Color.Black;
+            this.circle5_7.Enabled = false;
             this.circle5_7.Location = new System.Drawing.Point(597, 344);
             this.circle5_7.Name = "circle5_7";
             this.circle5_7.Size = new System.Drawing.Size(67, 60);
@@ -432,6 +469,7 @@
             // circle4_7
             // 
             this.circle4_7.BackColor = System.Drawing.Color.Black;
+            this.circle4_7.Enabled = false;
             this.circle4_7.Location = new System.Drawing.Point(597, 265);
             this.circle4_7.Name = "circle4_7";
             this.circle4_7.Size = new System.Drawing.Size(67, 60);
@@ -441,6 +479,7 @@
             // circle3_7
             // 
             this.circle3_7.BackColor = System.Drawing.Color.Black;
+            this.circle3_7.Enabled = false;
             this.circle3_7.Location = new System.Drawing.Point(597, 186);
             this.circle3_7.Name = "circle3_7";
             this.circle3_7.Size = new System.Drawing.Size(67, 60);
@@ -450,6 +489,7 @@
             // circle2_7
             // 
             this.circle2_7.BackColor = System.Drawing.Color.Black;
+            this.circle2_7.Enabled = false;
             this.circle2_7.Location = new System.Drawing.Point(597, 107);
             this.circle2_7.Name = "circle2_7";
             this.circle2_7.Size = new System.Drawing.Size(67, 60);
@@ -459,6 +499,7 @@
             // circle1_7
             // 
             this.circle1_7.BackColor = System.Drawing.Color.Black;
+            this.circle1_7.Enabled = false;
             this.circle1_7.Location = new System.Drawing.Point(597, 26);
             this.circle1_7.Name = "circle1_7";
             this.circle1_7.Size = new System.Drawing.Size(67, 60);

@@ -149,7 +149,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[5] = "Red";
                 }
-
+                Win();
             }
         }
 
@@ -173,7 +173,7 @@ namespace FInalProject2020
                     tokens[6] = "Yellow";
                 }
 
-
+                Win();
             }
         }
 
@@ -197,7 +197,7 @@ namespace FInalProject2020
                     tokens[7] = "Yellow";
 
                 }
-
+                Win();
             }
         }
 
@@ -1058,6 +1058,49 @@ namespace FInalProject2020
             startButton.Visible = false;
 
             circle1_1.Enabled = true;
+            circle1_2.Enabled = true;
+            circle1_3.Enabled = true;
+            circle1_4.Enabled = true;
+            circle1_5.Enabled = true;
+            circle1_6.Enabled = true;
+            circle1_7.Enabled = true;
+            circle2_1.Enabled = true;
+            circle2_2.Enabled = true;
+            circle2_3.Enabled = true;
+            circle2_4.Enabled = true;
+            circle2_5.Enabled = true;
+            circle2_6.Enabled = true;
+            circle2_7.Enabled = true;
+            circle3_1.Enabled = true;
+            circle3_2.Enabled = true;
+            circle3_3.Enabled = true;
+            circle3_4.Enabled = true;
+            circle3_5.Enabled = true;
+            circle3_6.Enabled = true;
+            circle3_7.Enabled = true;
+            circle4_1.Enabled = true;
+            circle4_2.Enabled = true;
+            circle4_3.Enabled = true;
+            circle4_4.Enabled = true;
+            circle4_5.Enabled = true;
+            circle4_6.Enabled = true;
+            circle4_7.Enabled = true;
+            circle5_1.Enabled = true;
+            circle5_2.Enabled = true;
+            circle5_3.Enabled = true;
+            circle5_4.Enabled = true;
+            circle5_5.Enabled = true;
+            circle5_6.Enabled = true;
+            circle5_7.Enabled = true;
+            circle6_1.Enabled = true;
+            circle6_2.Enabled = true;
+            circle6_3.Enabled = true;
+            circle6_4.Enabled = true;
+            circle6_5.Enabled = true;
+            circle6_6.Enabled = true;
+            circle6_7.Enabled = true;
+
+
         }
 
 
@@ -1270,13 +1313,14 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1305,13 +1349,14 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1340,13 +1385,14 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1375,6 +1421,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1382,6 +1429,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1410,6 +1458,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1417,6 +1466,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1445,6 +1495,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1452,6 +1503,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1480,6 +1532,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1487,6 +1540,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1515,6 +1569,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1522,6 +1577,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1550,6 +1606,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1557,6 +1614,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1585,6 +1643,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1592,6 +1651,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1620,6 +1680,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1627,6 +1688,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1655,6 +1717,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1662,6 +1725,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1690,13 +1754,14 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
@@ -1725,6 +1790,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1732,46 +1798,12 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
 
-            for (int i = 5; i <= 23; i+= i + 6)
-            {
-
-                if (tokens[i] == "red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                }
-
-            }
-
-            for (int i = 11; i <= 29; i= i + 6)
+            for (int i = 5; i <= 29; i+= i + 6)
             {
 
                 if (tokens[i] == "red")
@@ -1807,7 +1839,7 @@ namespace FInalProject2020
 
             }
 
-            for (int i = 6; i <= 24; i= i + 6)
+            for (int i = 6; i <= 36; i= i + 6)
             {
 
                 if (tokens[i] == "red")
@@ -1831,18 +1863,19 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
 
-            for (int i = 12; i <= 30; i= i + 7)
+            for (int i = 7; i <= 37; i= i + 6)
             {
 
                 if (tokens[i] == "red")
@@ -1866,18 +1899,19 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
 
-            for (int i = 18; i <= 36; i= i + 6)
+            for (int i = 14; i <= 38; i= i + 7)
             {
 
                 if (tokens[i] == "red")
@@ -1901,6 +1935,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    break;
 
 
                 }
@@ -1908,11 +1943,12 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
 
-            for (int i = 7; i <= 25; i= i + 6)
+            for (int i = 21; i <= 39; i= i + 6)
             {
 
                 if (tokens[i] == "red")
@@ -1936,202 +1972,17 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
-
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                }
-
-            }
-
-            for (int i = 13; i <= 31; i = i + 6)
-            {
-
-                if (tokens[i] == "red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-
+                    break;
 
                 }
                 else if (yellowToken == 4)
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    break;
                 }
 
             }
-
-            for (int i = 19; i <= 37; i = i + 6)
-            {
-
-                if (tokens[i] == "red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                }
-
-            }
-
-            for (int i = 14; i <= 32; i = i + 6)
-            {
-
-                if (tokens[i] == "red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                }
-
-            }
-
-            for (int i = 20; i <= 38; i = i + 6)
-            {
-
-                if (tokens[i] == "red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                }
-
-            }
-
-            for (int i = 21; i <= 39; i = i + 6)
-            {
-
-                if (tokens[i] == "red")
-                {
-                    redToken++;
-                    yellowToken = 0;
-                }
-                else if (tokens[i] == "yellow")
-                {
-                    yellowToken++;
-                    redToken = 0;
-
-                }
-                else
-                {
-                    redToken = 0;
-                    yellowToken = 0;
-
-                }
-
-                if (redToken == 4)
-                {
-                    connect4.Text = "Player 1 Wins";
-                    connect4.ForeColor = Color.Black;
-
-                }
-                else if (yellowToken == 4)
-                {
-
-                    connect4.Text = "Player 2 Wins";
-                    connect4.ForeColor = Color.Black;
-                }
-
-            }
-
-
-
-
-
-
-
-
-
-
 
 
 
