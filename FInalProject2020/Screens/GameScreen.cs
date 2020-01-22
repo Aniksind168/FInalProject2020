@@ -32,7 +32,6 @@ namespace FInalProject2020
         {
             if (circle1_1.BackColor == Color.Black)
             {
-                Console.Write("Anika");
 
                 if (player == 1)
                 {
@@ -224,7 +223,7 @@ namespace FInalProject2020
                     tokens[8] = "Yellow";
 
                 }
-
+                Win();
             }
         }
 
@@ -247,7 +246,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[9] = "Yellow";
                 }
-
+                Win();
             }
         }
 
@@ -270,7 +269,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[10] = "Yellow";
                 }
-  
+                Win();
             }
         }
 
@@ -293,7 +292,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[11] = "Yellow";
                 }
-              
+                Win();
             }
         }
 
@@ -316,7 +315,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[12] = "Yellow";
                 }
-             
+                Win();
             }
         }
 
@@ -339,7 +338,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[13] = "Yellow";
                 }
-      
+                Win();
             }
         }
 
@@ -362,7 +361,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[14] = "Yellow";
                 }
-     
+                Win();
             }
         }
 
@@ -385,7 +384,7 @@ namespace FInalProject2020
                     player = 1;
                     tokens[15] = "Yellow";
                 }
-
+                Win();
             }
         }
 
@@ -409,7 +408,7 @@ namespace FInalProject2020
                     tokens[16] = "Yellow";
 
                 }
-
+                Win();
             }
         }
 
@@ -434,6 +433,7 @@ namespace FInalProject2020
                         tokens[17] = "Yellow";
                     }
 
+                    Win();
                 }
             }
         }
@@ -458,6 +458,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[18] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -482,6 +483,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[19] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -506,6 +508,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[20] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -530,6 +533,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[21] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -554,6 +558,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[22] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -578,6 +583,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[23] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -602,6 +608,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[24] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -626,6 +633,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[25] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -652,6 +660,7 @@ namespace FInalProject2020
                         tokens[26] = "Yellow";
 
                     }
+                    Win();
                 }
             }
         }
@@ -676,6 +685,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[27] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -700,6 +710,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[28] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -724,6 +735,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[29] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -748,6 +760,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[30] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -773,6 +786,7 @@ namespace FInalProject2020
                         tokens[31] = "Yellow";
 
                     }
+                    Win();
                 }
             }
         }
@@ -797,6 +811,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[32] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -822,6 +837,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[33] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -846,6 +862,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[34] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -870,6 +887,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[35] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -894,6 +912,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[36] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -918,6 +937,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[37] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -942,6 +962,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[38] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -966,6 +987,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[39] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -990,6 +1012,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[40] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -1014,6 +1037,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[41] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -1038,6 +1062,7 @@ namespace FInalProject2020
                         player = 1;
                         tokens[42] = "Yellow";
                     }
+                    Win();
                 }
             }
         }
@@ -1049,6 +1074,45 @@ namespace FInalProject2020
             circle1_1.BackColor = Color.Black;
             circle1_2.BackColor = Color.Black;
             circle1_3.BackColor = Color.Black;
+            circle1_4.BackColor = Color.Black;
+            circle1_5.BackColor = Color.Black;
+            circle1_6.BackColor = Color.Black;
+            circle1_7.BackColor = Color.Black;
+            circle2_1.BackColor = Color.Black;
+            circle2_2.BackColor = Color.Black;
+            circle2_3.BackColor = Color.Black;
+            circle2_4.BackColor = Color.Black;
+            circle2_5.BackColor = Color.Black;
+            circle2_6.BackColor = Color.Black;
+            circle2_7.BackColor = Color.Black;
+            circle3_1.BackColor = Color.Black;
+            circle3_2.BackColor = Color.Black;
+            circle3_3.BackColor = Color.Black;
+            circle3_4.BackColor = Color.Black;
+            circle3_5.BackColor = Color.Black;
+            circle3_6.BackColor = Color.Black;
+            circle3_7.BackColor = Color.Black;
+            circle4_1.BackColor = Color.Black;
+            circle4_2.BackColor = Color.Black;
+            circle4_3.BackColor = Color.Black;
+            circle4_4.BackColor = Color.Black;
+            circle4_5.BackColor = Color.Black;
+            circle4_6.BackColor = Color.Black;
+            circle4_7.BackColor = Color.Black;
+            circle5_1.BackColor = Color.Black;
+            circle5_2.BackColor = Color.Black;
+            circle5_3.BackColor = Color.Black;
+            circle5_4.BackColor = Color.Black;
+            circle5_5.BackColor = Color.Black;
+            circle5_6.BackColor = Color.Black;
+            circle5_7.BackColor = Color.Black;
+            circle6_1.BackColor = Color.Black;
+            circle6_2.BackColor = Color.Black;
+            circle6_3.BackColor = Color.Black;
+            circle6_4.BackColor = Color.Black;
+            circle6_5.BackColor = Color.Black;
+            circle6_6.BackColor = Color.Black;
+            circle6_7.BackColor = Color.Black;
 
 
         }
@@ -1295,13 +1359,12 @@ namespace FInalProject2020
             for (int i = 1; i <= 7; i++)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
-                    connect4.Text = redToken.ToString("C");
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1335,12 +1398,12 @@ namespace FInalProject2020
             for (int i = 8; i <= 14; i++)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1356,6 +1419,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1363,6 +1427,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1371,12 +1436,12 @@ namespace FInalProject2020
             for (int i = 15; i <= 21; i++)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1392,6 +1457,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
                 }
@@ -1399,6 +1465,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1407,12 +1474,12 @@ namespace FInalProject2020
             for (int i = 22; i <= 28; i++)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1428,6 +1495,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1436,6 +1504,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1444,12 +1513,12 @@ namespace FInalProject2020
             for (int i = 29; i <= 35; i++)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Yed")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1465,6 +1534,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1473,6 +1543,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1481,12 +1552,12 @@ namespace FInalProject2020
             for (int i = 36; i <= 42; i++)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1502,6 +1573,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1510,6 +1582,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1518,12 +1591,12 @@ namespace FInalProject2020
             for (int i = 1; i <= 36; i= i + 7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1539,6 +1612,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1547,6 +1621,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1555,12 +1630,12 @@ namespace FInalProject2020
             for (int i = 2; i <= 37; i = i + 7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1576,6 +1651,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1584,6 +1660,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1592,12 +1669,12 @@ namespace FInalProject2020
             for (int i = 3; i <= 38; i= i + 7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1613,6 +1690,7 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
 
 
@@ -1621,6 +1699,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1629,12 +1708,12 @@ namespace FInalProject2020
             for (int i = 4; i <= 39; i= i +7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1650,6 +1729,8 @@ namespace FInalProject2020
                 if (redToken == 4)
                 {
                     connect4.Text = "Player 1 Wins";
+                    connect4.ForeColor = Color.Black;
+
                     break;
 
 
@@ -1658,6 +1739,7 @@ namespace FInalProject2020
                 {
 
                     connect4.Text = "Player 2 Wins";
+                    connect4.ForeColor = Color.Black;
                     break;
                 }
 
@@ -1666,12 +1748,12 @@ namespace FInalProject2020
             for (int i = 5; i <= 40; i= i + 7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1705,12 +1787,12 @@ namespace FInalProject2020
             for (int i = 6; i <= 41; i= i + 7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1744,12 +1826,12 @@ namespace FInalProject2020
             for (int i = 7; i <= 42; i= i +7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1782,12 +1864,12 @@ namespace FInalProject2020
             for (int i = 4; i <= 22; i= i + 6)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1821,12 +1903,12 @@ namespace FInalProject2020
             for (int i = 5; i <= 29; i+= i + 6)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1859,12 +1941,12 @@ namespace FInalProject2020
             for (int i = 6; i <= 36; i= i + 6)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1897,12 +1979,12 @@ namespace FInalProject2020
             for (int i = 7; i <= 37; i= i + 6)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1935,12 +2017,12 @@ namespace FInalProject2020
             for (int i = 14; i <= 38; i= i + 7)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
@@ -1974,12 +2056,12 @@ namespace FInalProject2020
             for (int i = 21; i <= 39; i= i + 6)
             {
 
-                if (tokens[i] == "red")
+                if (tokens[i] == "Red")
                 {
                     redToken++;
                     yellowToken = 0;
                 }
-                else if (tokens[i] == "yellow")
+                else if (tokens[i] == "Yellow")
                 {
                     yellowToken++;
                     redToken = 0;
