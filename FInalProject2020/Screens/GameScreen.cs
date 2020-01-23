@@ -1358,12 +1358,6 @@ namespace FInalProject2020
         }
 
 
-
-
-        //TODO create your global game variables here
-        int heroX, heroY, heroSize, heroSpeed;
-        SolidBrush heroBrush = new SolidBrush(Color.Black);
-
         public GameScreen()
         {
             InitializeComponent();
@@ -1372,11 +1366,7 @@ namespace FInalProject2020
 
         public void InitializeGameValues()
         {
-           //initial values
-            heroX = 100;
-            heroY = 100;
-            heroSize = 20;
-            heroSpeed = 5;
+           //Initial values
             tokens[0] = "extra";
             tokens[1] = "black";
             tokens[2] = "black";
@@ -1482,35 +1472,12 @@ namespace FInalProject2020
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-      
-            if (leftArrowDown == true)
-            {
-                heroX = heroX - heroSpeed;
-            }
-            if (downArrowDown == true)
-            {
-                heroY = heroY + heroSpeed;
-            }
-            if (rightArrowDown == true)
-            {
-                heroX = heroX + heroSpeed;
-            }
-            if (upArrowDown == true)
-            {
-                heroY = heroY - heroSpeed;
-            }
-
-
-
-            //calls the GameScreen_Paint method to draw the screen.
             Refresh();
         }
 
-
-        //Everything that is to be drawn on the screen should be done here
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
-        
+
         }
 
         //When player wins, this methodwill disable all tokens so they cannot be pressed again
