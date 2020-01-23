@@ -1424,8 +1424,7 @@ namespace FInalProject2020
 
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            // opens a pause screen is escape is pressed. Depending on what is pressed
-            // on pause screen the program will either continue or exit to main menu
+
             if (e.KeyCode == Keys.Escape && gameTimer.Enabled)
             {
                 gameTimer.Enabled = false;
@@ -1443,10 +1442,7 @@ namespace FInalProject2020
                 }
             }
 
-            //TODO - basic player 1 key down bools set below. Add remainging key down
-            // required for player 1 or player 2 here.
 
-            //player 1 button presses
             switch (e.KeyCode)
             {
                 case Keys.Left:
@@ -1466,10 +1462,7 @@ namespace FInalProject2020
 
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
-            //TODO - basic player 1 key up bools set below. Add remainging key up
-            // required for player 1 or player 2 here.
 
-            //player 1 button releases
             switch (e.KeyCode)
             {
                 case Keys.Left:
@@ -1487,14 +1480,9 @@ namespace FInalProject2020
             }
         }
 
-        /// <summary>
-        /// This is the Game Engine and repeats on each interval of the timer. For example
-        /// if the interval is set to 16 then it will run each 16ms or approx. 50 times
-        /// per second
-        /// </summary>
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-            //TODO move main character 
+      
             if (leftArrowDown == true)
             {
                 heroX = heroX - heroSpeed;
@@ -1522,11 +1510,60 @@ namespace FInalProject2020
         //Everything that is to be drawn on the screen should be done here
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
-            //draw rectangle to screen
-            //e.Graphics.FillRectangle(heroBrush, heroX, heroY, heroSize, heroSize);
+        
         }
 
-        //win method, check to seei f four of the same color tokens are in a rows. If there is it will display messages indicating a player has won.  
+        //When player wins, this methodwill disable all tokens so they cannot be pressed again
+        public void disableTokens()
+        {
+            circle1_1.Enabled = false;
+            circle1_2.Enabled = false;
+            circle1_3.Enabled = false;
+            circle1_4.Enabled = false;
+            circle1_5.Enabled = false;
+            circle1_6.Enabled = false;
+            circle1_7.Enabled = false;
+            circle2_1.Enabled = false;
+            circle2_2.Enabled = false;
+            circle2_3.Enabled = false;
+            circle2_4.Enabled = false;
+            circle2_5.Enabled = false;
+            circle2_6.Enabled = false;
+            circle2_7.Enabled = false;
+            circle3_1.Enabled = false;
+            circle3_2.Enabled = false;
+            circle3_3.Enabled = false;
+            circle3_4.Enabled = false;
+            circle3_5.Enabled = false;
+            circle3_6.Enabled = false;
+            circle3_7.Enabled = false;
+            circle4_1.Enabled = false;
+            circle4_2.Enabled = false;
+            circle4_3.Enabled = false;
+            circle4_4.Enabled = false;
+            circle4_5.Enabled = false;
+            circle4_6.Enabled = false;
+            circle4_7.Enabled = false;
+            circle5_1.Enabled = false;
+            circle5_2.Enabled = false;
+            circle5_3.Enabled = false;
+            circle5_4.Enabled = false;
+            circle5_5.Enabled = false;
+            circle5_6.Enabled = false;
+            circle5_7.Enabled = false;
+            circle6_1.Enabled = false;
+            circle6_2.Enabled = false;
+            circle6_3.Enabled = false;
+            circle6_4.Enabled = false;
+            circle6_5.Enabled = false;
+            circle6_6.Enabled = false;
+            circle6_7.Enabled = false;
+
+
+        }
+
+
+        //win method, check to see if four of the same color tokens are in a rows. If there is it will display messages indicating a player has won.  
         public void Win()
         {
             int redToken = 0;
@@ -1559,48 +1596,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -1609,48 +1605,8 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
+
                     break;
                 }
 
@@ -1681,48 +1637,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -1731,48 +1646,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -1803,48 +1677,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -1853,48 +1686,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -1925,48 +1717,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -1976,48 +1727,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2048,48 +1758,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2099,48 +1768,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2171,48 +1799,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2222,48 +1809,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2294,48 +1840,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2345,48 +1850,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2417,48 +1881,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2468,48 +1891,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2540,48 +1922,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2591,48 +1932,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2663,49 +1963,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
-
+                    disableTokens();
                     break;
 
 
@@ -2715,48 +1973,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2787,48 +2004,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2838,48 +2014,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -2910,48 +2045,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -2961,48 +2055,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3033,48 +2086,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -3083,48 +2095,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3155,48 +2126,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -3206,48 +2136,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3278,48 +2167,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -3328,48 +2176,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3400,48 +2207,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -3450,48 +2216,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3522,48 +2247,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -3572,48 +2256,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3644,48 +2287,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
 
@@ -3695,48 +2297,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3767,48 +2328,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -3817,48 +2337,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -3889,48 +2368,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -3939,48 +2377,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -4012,48 +2409,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -4062,52 +2418,9 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
-
-
 
             }
 
@@ -4136,48 +2449,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -4186,48 +2458,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -4259,48 +2490,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -4309,48 +2499,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -4381,48 +2530,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -4431,48 +2539,7 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
@@ -4503,48 +2570,7 @@ namespace FInalProject2020
                 {
                     connect4.Text = "Player 1 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
 
                 }
@@ -4553,54 +2579,15 @@ namespace FInalProject2020
 
                     connect4.Text = "Player 2 Wins";
                     connect4.ForeColor = Color.Black;
-                    circle1_1.Enabled = false;
-                    circle1_2.Enabled = false;
-                    circle1_3.Enabled = false;
-                    circle1_4.Enabled = false;
-                    circle1_5.Enabled = false;
-                    circle1_6.Enabled = false;
-                    circle1_7.Enabled = false;
-                    circle2_1.Enabled = false;
-                    circle2_2.Enabled = false;
-                    circle2_3.Enabled = false;
-                    circle2_4.Enabled = false;
-                    circle2_5.Enabled = false;
-                    circle2_6.Enabled = false;
-                    circle2_7.Enabled = false;
-                    circle3_1.Enabled = false;
-                    circle3_2.Enabled = false;
-                    circle3_3.Enabled = false;
-                    circle3_4.Enabled = false;
-                    circle3_5.Enabled = false;
-                    circle3_6.Enabled = false;
-                    circle3_7.Enabled = false;
-                    circle4_1.Enabled = false;
-                    circle4_2.Enabled = false;
-                    circle4_3.Enabled = false;
-                    circle4_4.Enabled = false;
-                    circle4_5.Enabled = false;
-                    circle4_6.Enabled = false;
-                    circle4_7.Enabled = false;
-                    circle5_1.Enabled = false;
-                    circle5_2.Enabled = false;
-                    circle5_3.Enabled = false;
-                    circle5_4.Enabled = false;
-                    circle5_5.Enabled = false;
-                    circle5_6.Enabled = false;
-                    circle5_7.Enabled = false;
-                    circle6_1.Enabled = false;
-                    circle6_2.Enabled = false;
-                    circle6_3.Enabled = false;
-                    circle6_4.Enabled = false;
-                    circle6_5.Enabled = false;
-                    circle6_6.Enabled = false;
-                    circle6_7.Enabled = false;
+                    disableTokens();
                     break;
                 }
 
 
 
             }
+
+
         }
     }
 }
